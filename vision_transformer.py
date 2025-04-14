@@ -269,7 +269,6 @@ class VisionTransformer(nn.Module):
         return x
 
 
-# Example usage and visualization functions
 def visualize_attention(model, img, head_idx=0, block_idx=0):
     """
     Visualize attention maps for a specific head and block.
@@ -458,8 +457,32 @@ if __name__ == "__main__":
     print(f"Model created with {sum(p.numel() for p in model.parameters())/1e6:.2f}M parameters")
     
     # Uncomment to train the model on CIFAR-10
-    train_vit_on_cifar10(model, epochs=5)
+    # train_vit_on_cifar10(model, epochs=5)
     
-    # Example of visualizing attention (requires a trained model)
-    img = torch.randn(1, 3, 224, 224)  # Random image for demonstration
-    visualize_attention(model, img, head_idx=0, block_idx=0)
+    # Example of visualizing attention with a sample image
+    try:
+        from torchvision import datasets
+        from torch.utils.data import DataLoader
+        
+        # Create a sample dataset to get a real image
+        transform = transforms.Compose([
+            transforms.Resize((224, 224)),
+            transforms.ToTensor(),
+            transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+        ])
+        
+        sample_dataset = datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)
+        sample_loader = DataLoader(sample_dataset, batch_size=1, shuffle=True)
+        
+        # Get a single image
+        for img, label in sample_loader:
+            break
+            
+        print(f"Visualizing attention for image with label: {label.item()} (class: {sample_dataset.classes[label.item()]})")
+        visualize_attention(model, img, head_idx=0, block_idx=0)
+        
+    except Exception as e:
+        print(f"Could not load sample image: {e}")
+        # Fallback to random image
+        img = torch.randn(1, 3, 224, 224)  # Random image for demonstration
+        visualize_attention(model, img, head_idx=0, block_idx=0)
