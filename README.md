@@ -25,6 +25,8 @@ The implementation includes the following components:
 
 ## Usage
 
+### Custom ViT Implementation
+
 ```python
 from vision_transformer import VisionTransformer
 
@@ -45,3 +47,4 @@ model = VisionTransformer(
 import torch
 x = torch.randn(1, 3, 224, 224)  # Batch of 1 image
 logits = model(x)  # Shape: [1, num_classes]
+```
