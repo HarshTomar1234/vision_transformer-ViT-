@@ -75,7 +75,7 @@ def main():
     print(f"Model loaded with {sum(p.numel() for p in model.parameters())/1e6:.2f}M parameters")
     
     # Load your own image
-    image_path = "9aa05d10-4672-4798-81c8-2a65cd5188c0.jpg"
+    image_path = "images/ai_learner.jpeg"
     transform = transforms.Compose([
         transforms.Resize((224, 224)),
         transforms.ToTensor(),
