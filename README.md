@@ -1,6 +1,6 @@
 # Vision Transformer (ViT) Implementation
 
-![Vision Transformer Architecture](https://miro.medium.com/max/1400/1*aJ9vWTdSA2lVrGO2BxQk2g.png)
+![Vision Transformer Architecture](https://production-media.paperswithcode.com/methods/Screen_Shot_2021-01-26_at_9.43.31_PM_uI4jjMq.png)
 
 This repository contains a PyTorch implementation of the Vision Transformer (ViT) model as described in the paper ["An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"](https://arxiv.org/abs/2010.11929) by Dosovitskiy et al. The codebase includes implementations for both CIFAR-10 and ImageNet datasets.
 
@@ -254,7 +254,7 @@ We conducted experiments training the Vision Transformer on the ImageNet dataset
 
 #### Without Augmentation
 
-![Training Curve Without Augmentation](Vision%20transformer%20on%20ImageNet/images/training_curve_noaug.png)
+![Training Curve Without Augmentation](VisiontransformeronImageNet/images/training_curve_noaug.png)
 
 In the experiment without augmentation:
 - Training accuracy quickly reaches ~85%
