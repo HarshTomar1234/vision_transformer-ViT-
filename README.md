@@ -57,7 +57,7 @@ The repository is organized as follows:
 │   ├── train.py                          # Training script
 │   ├── utils.py                          # Utility functions
 │   ├── notes.py                          # Implementation notes
-│   └── images/                           # Training visualizations
+│   └── training_curves_images/           # Training visualizations
 │       ├── training_curve_noaug.png      # Training curve without augmentation
 │       └── training_curve_waug.png       # Training curve with augmentation
 │
@@ -254,7 +254,7 @@ We conducted experiments training the Vision Transformer on the ImageNet dataset
 
 #### Without Augmentation
 
-![Training Curve Without Augmentation](./Vision%20transformer%20on%20ImageNet/images/training_curve_noaug.png)
+![Training Curve Without Augmentation](./Vision%20transformer%20on%20ImageNet/training_curves_images/training_curve_noaug.png)
 
 In the experiment without augmentation:
 - Training accuracy quickly reaches ~85%
@@ -264,7 +264,7 @@ In the experiment without augmentation:
 
 #### With Augmentation
 
-![Training Curve With Augmentation](./Vision%20transformer%20on%20ImageNet/images/training_curve_waug.png)
+![Training Curve With Augmentation](./Vision%20transformer%20on%20ImageNet/training_curves_images/training_curve_waug.png)
 
 When training with augmentation:
 - Validation accuracy grows more steadily
