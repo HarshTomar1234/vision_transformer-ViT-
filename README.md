@@ -254,7 +254,7 @@ We conducted experiments training the Vision Transformer on the ImageNet dataset
 
 #### Without Augmentation
 
-![Training Curve Without Augmentation](VisiontransformeronImageNet/images/training_curve_noaug.png)
+![Training Curve Without Augmentation](./Vision%20transformer%20on%20ImageNet/images/training_curve_noaug.png)
 
 In the experiment without augmentation:
 - Training accuracy quickly reaches ~85%
@@ -264,7 +264,7 @@ In the experiment without augmentation:
 
 #### With Augmentation
 
-![Training Curve With Augmentation](Vision%20transformer%20on%20ImageNet/images/training_curve_waug.png)
+![Training Curve With Augmentation](./Vision%20transformer%20on%20ImageNet/images/training_curve_waug.png)
 
 When training with augmentation:
 - Validation accuracy grows more steadily
@@ -292,9 +292,9 @@ The Vision Transformer adapted for CIFAR-10 demonstrates strong performance desp
 
 We trained the Vision Transformer on CIFAR-10 and captured the following training metrics:
 
-![CIFAR-10 Training Results 1](Vision%20Transformer%20on%20CIFAR-10/images/Screenshot%202025-04-16%20052026.png)
+![CIFAR-10 Training Results 1](./Vision%20Transformer%20on%20CIFAR-10/images/Screenshot%202025-04-16%20052026.png)
 
-![CIFAR-10 Training Results 2](Vision%20Transformer%20on%20CIFAR-10/images/Screenshot%202025-04-16%20062151.png)
+![CIFAR-10 Training Results 2](./Vision%20Transformer%20on%20CIFAR-10/images/Screenshot%202025-04-16%20062151.png)
 
 The training curves show:
 - Consistent improvement in both training and validation accuracy over time
