@@ -1,6 +1,6 @@
 # Vision Transformer (ViT) Implementation
 
-![Vision Transformer Architecture](https://production-media.paperswithcode.com/methods/Screen_Shot_2021-01-26_at_9.43.31_PM_uI4jjMq.png)
+![Vision Transformer Architecture](https://media.geeksforgeeks.org/wp-content/uploads/20250108160202257232/Vision-Transformer-Architecture_.webp)
 
 This repository contains a PyTorch implementation of the Vision Transformer (ViT) model as described in the paper ["An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"](https://arxiv.org/abs/2010.11929) by Dosovitskiy et al. The codebase includes implementations for both CIFAR-10 and ImageNet datasets.
 
@@ -440,3 +440,4 @@ visualize_attention(model, img_tensor, head_idx=0, block_idx=0)
 3. Touvron, H., Cord, M., Douze, M., Massa, F., Sablayrolles, A., & Jégou, H. (2021). Training data-efficient image transformers & distillation through attention. International Conference on Machine Learning, 10347-10357.
 4. Huggingface PyTorch Image Models: https://github.com/huggingface/pytorch-image-models
 5. Lucidrains ViT PyTorch: https://github.com/lucidrains/vit-pytorch
+
